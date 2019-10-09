@@ -16,7 +16,7 @@ class PhotoRepository @Inject constructor(
 
     override suspend fun getPhotos(): Resource<List<Photo>> {
         return try {
-            val result = api.getPhotos().await()
+            val result = api.getPhotos()
             val body = result.body()
             if (result.isSuccessful && body != null) {
                 Resource.success(mapper.map(body))

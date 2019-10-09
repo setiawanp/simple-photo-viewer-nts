@@ -1,6 +1,5 @@
 package com.setiawanpaiman.spvnts.http
 
-import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.setiawanpaiman.spvnts.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -24,7 +23,6 @@ class ApiFactory constructor(baseUrl: String) {
     private val retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(baseUrl)
         .addConverterFactory(GsonConverterFactory.create())
-        .addCallAdapterFactory(CoroutineCallAdapterFactory())
         .client(okHttpClient)
         .build()
 
