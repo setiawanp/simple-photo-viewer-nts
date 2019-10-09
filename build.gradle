@@ -29,7 +29,15 @@ task clean(type: Delete) {
 
 ext {
     androidXVersion = [
-            lifecycle: "2.0.0"
+            appCompat   : "1.1.0",
+            core        : "1.1.0",
+            lifecycle   : "2.1.0"
+    ]
+    androidXTestVersion = [
+            espresso    : "3.2.0",
+            ext         : "1.1.1",
+            rules       : "1.2.0",
+            runner      : "1.2.0"
     ]
     coroutinesVersion = "1.2.0"
     daggerVersion = "2.22.1"
