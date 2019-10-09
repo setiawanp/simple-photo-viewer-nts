@@ -35,5 +35,5 @@ ext {
     daggerVersion = "2.22.1"
     okHttpVersion = "3.12.2"
     playServicesLocationVersion = "16.0.0"
-    retrofitVersion = "2.5.0"
+    retrofitVersion = "2.6.1"
 }

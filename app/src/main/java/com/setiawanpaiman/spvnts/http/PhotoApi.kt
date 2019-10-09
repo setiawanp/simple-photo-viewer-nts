@@ -11,5 +11,5 @@ import retrofit2.http.GET
 interface PhotoApi {
 
     @GET("photos")
-    fun getPhotos(): Deferred<Response<List<PhotoResponse>>>
+    suspend fun getPhotos(): Response<List<PhotoResponse>>
 }
